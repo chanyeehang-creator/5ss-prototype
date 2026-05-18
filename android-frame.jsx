@@ -22,11 +22,12 @@ const MD_C = {
 function AndroidStatusBar({ dark = false }) {
   const c = dark ? '#fff' : MD_C.onSurface;
   return (
-    <div style={{
+    <div className="android-status-bar" style={{
       height: 40, display: 'flex', alignItems: 'center',
       justifyContent: 'space-between', padding: '0 16px',
       position: 'relative',
       fontFamily: 'Roboto, system-ui, sans-serif',
+      flexShrink: 0,
     }}>
       {/* time left */}
       <div style={{ width: 128, display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -143,7 +144,7 @@ function AndroidDevice({
   title, large = false, keyboard = false,
 }) {
   return (
-    <div style={{
+    <div className="android-device-frame" style={{
       width, height, borderRadius: 18, overflow: 'hidden',
       background: dark ? '#1d1b20' : MD_C.surface,
       border: `8px solid ${MD_C.frameBorder}`,
