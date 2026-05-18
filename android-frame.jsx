@@ -125,7 +125,7 @@ function AndroidListItem({ headline, supporting, leading }) {
 // ─────────────────────────────────────────────────────────────
 function AndroidNavBar({ dark = false }) {
   return (
-    <div style={{
+    <div className="android-nav-bar" style={{
       height: 24, display: 'flex', alignItems: 'center', justifyContent: 'center',
     }}>
       <div style={{
